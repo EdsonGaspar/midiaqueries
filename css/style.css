@@ -17,6 +17,12 @@ h4 {
     color: green;
   }
 }
+/*Width é usado para dispositivos especificos. Está em baixo para não ser sobrescrito pelo de 450px*/
+@media (width: 375px) {
+  h1 {
+    color: darkmagenta;
+  }
+}
 /*Para não sobrescrever o primeiro e para definir um intervalo de tamanho de dispositivo*/
 @media (min-width: 768px) and (max-width: 1024px) {
   h1 {
@@ -24,5 +30,14 @@ h4 {
   }
   h4 {
     color: blue;
+  }
+}
+/*A cor do texto vai mudar consernente a orientação do dispositivo. Oun seja se o dispositivo estiver na horizontal*/
+@media (orientation: landscape) {
+  h1 {
+    color: yellow;
+  }
+  h4 {
+    color: yellow;
   }
 }
